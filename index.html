@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Spider-Man: Across Our Universe</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <section id="loginScreen" class="screen">
+
+    <div class="login-container">
+
+        <h1>🕷️ Acceso al Universo</h1>
+
+        <input
+            type="text"
+            id="username"
+            placeholder="Usuario">
+
+        <input
+            type="password"
+            id="password"
+            placeholder="Contraseña">
+
+        <button id="loginBtn" class="btn-spider">
+            Entrar ❤️
+        </button>
+
+        <p id="loginError"></p>
+
+    </div>
+
+</section>
+
+   <audio id="bgMusic" loop>
+    <source src="nuestra-cancion.mp3" type="audio/mpeg">
+</audio>
+    <!-- REPRODUCTOR -->
+
+    <div class="music-player">
+
+        <button id="musicBtn">
+            ▶
+        </button>
+
+        <span>🎵 Dale click al play</span>
+
+    </div>
+
+    <!-- HERO -->
+    <!-- PANTALLA 1 -->
+
+<section id="screen1" class="screen" style="display:none;">
+
+    <div class="hero-content">
+
+        <span class="universe-tag">
+            🕷️ SPIDER-MAN
+        </span>
+
+        <h1>
+            Feliz Cumpleaños mi amor bonito ❤️
+        </h1>
+
+        <p class="phrase">
+            De todos los universos posibles,
+            volvería a encontrarte.
+        </p>
+
+        <p class="distance-text">
+            Aunque todavía no hemos podido encontrarnos,
+            cada día que pasa,
+            me haces sentir más cerca de ti.
+        </p>
+
+        <button id="startBtn">
+            Comenzar
+        </button>
+
+    </div>
+
+</section>
+
+<!-- PANTALLA DOCTOR -->
+
+<section id="screenDoctor" class="screen">
+
+    <div class="doctor-container">
+
+        <h2>Diagnostico del Doctor.Rodriguez.</h2>
+    
+        <p>
+            Necesito que examine mi corazoncito 
+        </p>
+
+        <div id="stethoscope"></div>
+
+        <div class="heart-wrapper">
+
+            <svg id="heartSVG"
+                 viewBox="0 0 512 512">
+
+                <defs>
+
+                    <clipPath id="heartClip">
+
+                        <path d="
+                        M256 472
+                        C256 472 32 320 32 160
+                        C32 80 96 32 160 32
+                        C208 32 240 64 256 96
+                        C272 64 304 32 352 32
+                        C416 32 480 80 480 160
+                        C480 320 256 472 256 472
+                        Z"/>
+
+                    </clipPath>
+
+                </defs>
+
+                <!-- Fondo gris -->
+
+                <path
+                fill="#444"
+                d="
+                M256 472
+                C256 472 32 320 32 160
+                C32 80 96 32 160 32
+                C208 32 240 64 256 96
+                C272 64 304 32 352 32
+                C416 32 480 80 480 160
+                C480 320 256 472 256 472
+                Z"/>
+
+                <!-- Relleno -->
+
+                <rect id="heartFill"
+                      x="0"
+                      y="512"
+                      width="512"
+                      height="512"
+                      fill="#E11D48"
+                      clip-path="url(#heartClip)"/>
+
+            </svg>
+
+        </div>
+
+        <h2 id="diagnosisPercent">
+            0%
+        </h2>
+
+        <p id="diagnosisText"></p>
+
+        <div id="diagnosisModal" class="diagnosis-modal">
+
+    <div class="diagnosis-box">
+
+        <h2>Diagnóstico Final</h2>
+
+        <p>
+            Gracias por diagnosticar lo que siento por ti.
+        </p>
+
+        <p>
+            El resultado es positivo:
+            mi corazón está completamente enamorado de ti ❤️
+        </p>
+
+        <button id="doctorContinue" class="btn-spider">
+            Continuar ❤️
+        </button>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- PANTALLA 2 -->
+
+<section id="screen2" class="screen">
+
+    <div class="game-container">
+
+        <h2>MISIÓN 1</h2>
+
+        <h1>Captura los corazones </h1>
+
+        <div id="score">
+            0 / 20
+        </div>
+
+        <div id="gameArea"></div>
+
+    </div>
+
+</section>
+
+<!-- PANTALLA 3 -->
+
+<section id="screen3" class="screen">
+
+    <div class="reasons-container">
+
+        <h1>
+            100 Razones por las que TE AMO ❤️
+        </h1>
+
+        <p id="reasonCounter">
+            0 / 100 descubiertas
+        </p>
+
+       <div id="pixelGrid"></div>
+
+<button id="continueReasons" class="btn-spider">    
+    Continuar ❤️
+</button>
+
+<div id="reasonModal" class="modal">
+
+    <div class="modal-content">
+
+        <h2 id="reasonTitle"></h2>
+
+        <p id="reasonText"></p>
+
+        <button id="closeReason" class="btn-spider">
+            Cerrar
+        </button>
+
+    </div>
+
+</div>
+
+    </div>
+
+</section>
+
+<section id="screenTiempo" class="screen">
+
+    <div class="time-container">
+
+        <h1>Nuestra Historia ❤️</h1>
+
+        <p>
+            Desde aquel día que comenzó todo:
+        </p>
+
+        <h2>13 / 05 / 2024</h2>
+
+        <div class="counter-box">
+
+            <div class="counter-item">
+                <span id="daysTogether">0</span>
+                <p>Días</p>
+            </div>
+
+            <div class="counter-item">
+                <span id="hoursTogether">0</span>
+                <p>Horas</p>
+            </div>
+
+            <div class="counter-item">
+                <span id="minutesTogether">0</span>
+                <p>Minutos</p>
+            </div>
+
+            <div class="counter-item">
+                <span id="secondsTogether">0</span>
+                <p>Segundos</p>
+            </div>
+
+        </div>
+
+        <button id="continueLetter" class="btn-spider">
+            Continuar ❤️
+        </button>
+
+    </div>
+
+</section>
+
+<!-- PANTALLA 4 -->
+
+<section id="screen4" class="screen">
+
+    <div class="letter-container">
+
+        <h1>💌 Una carta para ti</h1>
+
+       <div class="letter">
+
+    <p id="typewriter"></p>
+
+</div>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

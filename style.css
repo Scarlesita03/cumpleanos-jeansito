@@ -1,0 +1,1826 @@
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ==========================
+   BODY
+========================== */
+
+body{
+
+    
+
+    font-family:'Segoe UI',sans-serif;
+
+    min-height:100vh;
+
+    background:
+linear-gradient(
+rgba(0,0,0,.65),
+rgba(0,0,0,.75)
+),
+url("newyork.jpg");
+
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+background-attachment:fixed;
+
+    color:white;
+
+overflow-x:hidden;
+overflow-y:auto;
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+/* ==========================
+   CONTENIDO
+========================== */
+
+.hero-content{
+
+    width:100%;
+
+    max-width:900px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    animation:fadeUp 1.5s ease;
+
+}
+
+/* ==========================
+   SPIDER-MAN
+========================== */
+
+.universe-tag{
+
+    color:#2563EB;
+
+    letter-spacing:6px;
+
+    font-size:.9rem;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+/* ==========================
+   TITULO
+========================== */
+
+.hero h1{
+
+    font-family:'Orbitron',sans-serif;
+
+    font-size:4.5rem;
+
+    font-weight:900;
+
+    margin-bottom:25px;
+
+    text-shadow:
+        0 0 20px rgba(225,29,72,.7);
+
+}
+
+/* ==========================
+   FRASE
+========================== */
+
+.phrase{
+
+    color:#FFFFFF;
+
+    font-size:1.5rem;
+
+    line-height:1.8;
+
+    margin-bottom:20px;
+
+}
+
+/* ==========================
+   TEXTO DISTANCIA
+========================== */
+
+.distance-text{
+
+    color:#D1D5DB;
+
+    font-size:1rem;
+
+    max-width:650px;
+
+    line-height:1.8;
+
+    margin-bottom:50px;
+
+}
+
+/* ==========================
+   BOTON
+========================== */
+
+#startBtn{
+
+    padding:18px 55px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:
+    linear-gradient(
+        45deg,
+        #E11D48,
+        #2563EB
+    );
+
+    color:white;
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+    box-shadow:
+        0 0 20px rgba(225,29,72,.5);
+
+}
+
+#startBtn:hover{
+
+    transform:
+        translateY(-5px)
+        scale(1.05);
+
+    box-shadow:
+        0 0 20px #E11D48,
+        0 0 40px #2563EB,
+        0 0 80px rgba(37,99,235,.5);
+
+}
+
+/* ==========================
+   REPRODUCTOR
+========================== */
+
+.music-player{
+
+    position:fixed;
+
+    top:25px;
+
+    right:25px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:12px 20px;
+
+    background:rgba(255,255,255,.05);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.1);
+
+    border-radius:50px;
+
+    z-index:1000;
+
+}
+
+.music-player span{
+
+    color:#D1D5DB;
+
+    font-size:.9rem;
+
+}
+
+#musicBtn{
+
+    width:40px;
+
+    height:40px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#E11D48;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#musicBtn:hover{
+
+    transform:scale(1.1);
+
+}
+
+/* ==========================
+   ANIMACION
+========================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+    .hero h1{
+
+        font-size:2.7rem;
+
+    }
+
+    .phrase{
+
+        font-size:1.1rem;
+
+    }
+
+    .distance-text{
+
+        font-size:.9rem;
+
+    }
+
+}
+
+/* ==========================
+   PANTALLAS
+========================== */
+
+.screen{
+
+    width:100%;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+/* Oculta la pantalla 2 */
+
+#screen2{
+
+    display:none;
+
+}
+
+/* ==========================
+   MISION
+========================== */
+
+.mission-container{
+
+    width:90%;
+
+    max-width:800px;
+
+}
+
+.mission-container h2{
+
+    color:#2563EB;
+
+    letter-spacing:5px;
+
+    margin-bottom:20px;
+
+}
+
+.mission-container h1{
+
+    font-family:'Orbitron',sans-serif;
+
+    font-size:3rem;
+
+    margin-bottom:25px;
+
+}
+
+.mission-container p{
+
+    color:#D1D5DB;
+
+    font-size:1.2rem;
+
+    margin-bottom:40px;
+
+}
+
+#missionBtn{
+
+    padding:18px 50px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:
+    linear-gradient(
+        45deg,
+        #E11D48,
+        #2563EB
+    );
+
+    color:white;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+    transition:.4s;
+
+}
+
+#missionBtn:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* ==========================
+   SCORE
+========================== */
+
+#score{
+
+    font-size:2rem;
+
+    font-weight:bold;
+
+    margin:25px 0;
+
+}
+
+/* ==========================
+   MENSAJE
+========================== */
+
+#message{
+
+    color:#D1D5DB;
+
+    margin-bottom:40px;
+
+    min-height:30px;
+
+}
+
+/* ==========================
+   AREA DE CORAZONES
+========================== */
+
+.heart-area{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+/* ==========================
+   CORAZONES
+========================== */
+
+.heart{
+
+    font-size:3rem;
+
+    border:none;
+
+    background:none;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.heart:hover{
+
+    transform:scale(1.2);
+
+}
+
+/* ==========================
+   GAME SCREEN
+========================== */
+
+#screen2{
+
+    display:none;
+
+    background:black;
+
+}
+
+/* ==========================
+   CONTENEDOR
+========================== */
+
+.game-container{
+
+    width:100%;
+
+    height:100vh;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.game-container h2{
+
+    margin-top:30px;
+
+    text-align:center;
+
+    color:#2563EB;
+
+    letter-spacing:5px;
+
+}
+
+.game-container h1{
+
+    text-align:center;
+
+    margin-top:15px;
+
+}
+
+#score{
+
+    text-align:center;
+
+    font-size:2rem;
+
+    margin-top:20px;
+
+    margin-bottom:20px;
+
+}
+
+/* ==========================
+   AREA DE JUEGO
+========================== */
+
+#gameArea{
+
+    position:relative;
+
+    width:100%;
+
+    height:80vh;
+
+}
+
+/* ==========================
+   CORAZONES
+========================== */
+
+.heart{
+
+    position:absolute;
+
+    font-size:40px;
+
+    cursor:pointer;
+
+    user-select:none;
+
+    animation:fall linear forwards;
+
+}
+
+/* ==========================
+   TELARAÑA
+========================== */
+
+.web{
+
+    position:absolute;
+
+    font-size:50px;
+
+    pointer-events:none;
+
+    animation:webEffect .6s ease-out forwards;
+
+}
+
+/* ==========================
+   EXPLOSION
+========================== */
+
+.explosion{
+
+    position:absolute;
+
+    color:white;
+
+    font-size:50px;
+
+    pointer-events:none;
+
+    animation:explode .5s ease-out forwards;
+
+}
+
+/* ==========================
+   CAIDA
+========================== */
+
+@keyframes fall{
+
+    from{
+
+        transform:translateY(-100px);
+
+    }
+
+    to{
+
+        transform:translateY(100vh);
+
+    }
+
+}
+
+/* ==========================
+   TELARAÑA
+========================== */
+
+@keyframes webEffect{
+
+    from{
+
+        transform:scale(.3);
+
+        opacity:1;
+
+    }
+
+    to{
+
+        transform:scale(1.5);
+
+        opacity:0;
+
+    }
+
+}
+
+/* ==========================
+   EXPLOSION
+========================== */
+
+@keyframes explode{
+
+    from{
+
+        transform:scale(.5);
+
+        opacity:1;
+
+    }
+
+    to{
+
+        transform:scale(2);
+
+        opacity:0;
+
+    }
+
+}
+
+/* ==========================
+   SCREEN 3
+========================== */
+
+#screen3{
+
+    display:none;
+
+    min-height:100vh;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+/* ==========================
+   CONTENEDOR
+========================== */
+
+.reasons-container{
+
+    text-align:center;
+
+}
+
+.reasons-container h1{
+
+    margin-bottom:20px;
+
+}
+
+#reasonCounter{
+
+    margin-bottom:30px;
+
+    font-size:1.2rem;
+
+}
+
+/* ==========================
+   PIXEL GRID
+========================== */
+
+#pixelGrid{
+
+    display:grid;
+
+    grid-template-columns:repeat(10, 50px);
+
+    grid-template-rows:repeat(10, 50px);
+
+    gap:4px;
+
+    justify-content:center;
+
+}
+
+/* ==========================
+   PIXEL
+========================== */
+
+.pixel{
+
+    width:50px;
+
+    height:50px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.pixel:hover{
+
+    transform:scale(1.15);
+
+}
+
+/* Pixel descubierto */
+
+.opened{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:22px;
+
+}
+
+/* MODAL */
+
+.modal{
+
+    display:none;
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,.85);
+
+    justify-content:center;
+    align-items:center;
+
+    z-index:9999;
+
+}
+
+.modal-content{
+
+    width:90%;
+    max-width:500px;
+
+    background:#111827;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    border:2px solid #ff2d55;
+
+}
+
+.modal-content h2{
+
+    margin-bottom:20px;
+
+    color:#ff2d55;
+
+}
+
+.modal-content p{
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+}
+
+.modal-content button{
+
+    padding:12px 30px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#ff2d55;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+/* PIXEL DESCUBIERTO */
+
+.pixel.opened{
+
+    background:#ff2d55 !important;
+
+    box-shadow:0 0 15px #ff2d55;
+
+}
+
+/* ==========================
+   SCREEN 4
+========================== */
+
+#screen4{
+
+    display:none;
+
+    min-height:100vh;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px;
+
+}
+
+/* ==========================
+   CARTA
+========================== */
+
+.letter-container{
+
+    width:90%;
+    max-width:900px;
+
+    text-align:center;
+
+}
+
+.letter-container h1{
+
+    margin-bottom:30px;
+
+}
+
+.letter{
+
+    background:white;
+
+    color:#222;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    text-align:left;
+
+    line-height:2;
+
+    box-shadow:
+    0 0 30px rgba(255,255,255,.15);
+
+    max-height:70vh;
+
+    overflow-y:auto;
+
+    animation: cartaEntrada 1.5s ease;
+
+}
+
+.audio-section{
+
+    margin-top:30px;
+
+}
+
+.audio-section h3{
+
+    margin-bottom:15px;
+
+}
+
+#screenTiempo{
+
+    display:none;
+
+    min-height:100vh;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.counter-box{
+
+    display:flex;
+
+    gap:30px;
+
+    justify-content:center;
+
+    margin:40px 0;
+
+    flex-wrap:wrap;
+
+}
+
+.counter-item{
+
+    background:#111827;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    min-width:150px;
+
+}
+
+.counter-item span{
+
+    font-size:2rem;
+
+    font-weight:bold;
+
+    color:#ff2d55;
+
+}
+
+#continueLetter{
+
+    padding:18px 55px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:
+    linear-gradient(
+        45deg,
+        #E11D48,
+        #2563EB
+    );
+
+    color:white;
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+    box-shadow:
+        0 0 20px rgba(225,29,72,.5);
+
+}
+
+#continueLetter:hover{
+
+    transform:
+        translateY(-5px)
+        scale(1.05);
+
+    box-shadow:
+        0 0 20px #E11D48,
+        0 0 40px #2563EB,
+        0 0 80px rgba(37,99,235,.5);
+
+}
+
+/* ==========================
+   LOGIN
+========================== */
+
+#loginScreen{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.login-container{
+
+    width:90%;
+    max-width:450px;
+
+    padding:40px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    border-radius:25px;
+
+    text-align:center;
+
+    box-shadow:
+    0 0 30px rgba(225,29,72,.25);
+
+}
+
+.login-container h1{
+
+    margin-bottom:30px;
+
+    font-family:'Orbitron',sans-serif;
+
+}
+
+.login-container input{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    outline:none;
+
+    background:#1f2937;
+
+    color:white;
+
+    font-size:1rem;
+
+}
+
+.login-container input::placeholder{
+
+    color:#9ca3af;
+
+}
+
+#loginBtn{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:
+    linear-gradient(
+        45deg,
+        #E11D48,
+        #2563EB
+    );
+
+    color:white;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#loginBtn:hover{
+
+    transform:scale(1.03);
+
+}
+
+#loginError{
+
+    margin-top:15px;
+
+    color:#ff4d6d;
+
+    min-height:25px;
+
+}
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+    radial-gradient(
+        circle at top right,
+        rgba(37,99,235,.25),
+        transparent 30%
+    ),
+
+    radial-gradient(
+        circle at bottom left,
+        rgba(225,29,72,.25),
+        transparent 30%
+    );
+
+    pointer-events:none;
+
+    z-index:-1;
+
+}
+
+/* ==========================
+   FONDOS INDIVIDUALES
+========================== */
+
+#loginScreen{
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,.65),
+    rgba(0,0,0,.75)
+    ),
+    url("login.jpg");
+
+    background-size:cover;
+    background-position:center;
+}
+
+#screen1{
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,.65),
+    rgba(0,0,0,.75)
+    ),
+    url("skyline.jpg");
+
+    background-size:cover;
+    background-position:center;
+}
+
+#screen2{
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,.55),
+    rgba(0,0,0,.70)
+    ),
+    url("spiderman-city.jpg");
+
+    background-size:cover;
+    background-position:center;
+}
+
+#screen3{
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,.65),
+    rgba(0,0,0,.75)
+    ),
+    url("times-square.jpg");
+
+    background-size:cover;
+    background-position:center;
+}
+
+#screenTiempo{
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,.65),
+    rgba(0,0,0,.75)
+    ),
+    url("brooklyn.jpg");
+
+    background-size:cover;
+    background-position:center;
+}
+
+#screen4{
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,.75),
+    rgba(0,0,0,.85)
+    ),
+    url("brooklyn.jpg");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.screen{
+
+    animation:fadeScreen 1s ease;
+}
+
+@keyframes fadeScreen{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+/* ==========================
+   DOCTOR
+========================== */
+
+#screenDoctor{
+
+    display:none;
+
+}
+
+.doctor-container{
+
+    text-align:center;
+
+}
+
+#doctorContinue{
+
+    display:none;
+
+    margin-top:30px;
+
+    padding:18px 55px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:linear-gradient(
+        45deg,
+        #E11D48,
+        #2563EB
+    );
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+#stethoscope{
+
+    font-size:120px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#stethoscope:hover{
+
+    transform:scale(1.1);
+
+}
+
+#heartContainer{
+
+    margin-top:30px;
+
+    font-size:100px;
+
+}
+
+.beat{
+
+    animation:heartbeat .5s ease;
+}
+
+@keyframes heartbeat{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.3);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+
+}
+
+/* ==========================
+   PANTALLA DOCTOR
+========================== */
+
+#screenDoctor{
+
+    display:none;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.75),
+        rgba(0,0,0,.85)
+    ),
+    url("doctor-bg.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+}
+
+.doctor-container{
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+#stethoscope{
+
+    width:140px;
+    height:140px;
+
+    margin:20px auto;
+
+    background:url("stethoscope.png");
+
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+#stethoscope:hover{
+
+    transform:scale(1.1);
+
+}
+
+.heart-wrapper{
+
+    width:420px;
+
+    margin:auto;
+}
+
+#heartSVG{
+
+    width:100%;
+}
+
+#diagnosisPercent{
+
+    font-size:2rem;
+
+    margin-top:15px;
+}
+
+#doctorContinue{
+
+    display:inline-block;
+
+    margin-top:30px;
+
+}
+
+.diagnosis-modal{
+
+    display:none;
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.75);
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:999;
+}
+
+.diagnosis-box{
+
+    width:90%;
+    max-width:500px;
+
+    padding:40px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    background:
+    linear-gradient(
+        135deg,
+        rgba(225,29,72,.95),
+        rgba(37,99,235,.95)
+    );
+
+    color:white;
+
+    box-shadow:
+        0 0 30px rgba(225,29,72,.5),
+        0 0 50px rgba(37,99,235,.5);
+
+}
+
+.diagnosis-box h2{
+
+    margin-bottom:20px;
+
+}
+
+.diagnosis-box p{
+
+    margin-bottom:15px;
+
+    line-height:1.6;
+
+}
+
+.reasons-container{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:80px;
+
+    padding:20px;
+}
+
+.reasons-info{
+
+    width:320px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+}
+
+.reasons-info h1{
+
+    margin-bottom:20px;
+
+    line-height:1.3;
+}
+
+#reasonCounter{
+
+    margin-bottom:30px;
+
+    font-size:1.2rem;
+}
+
+/* ==========================
+   PANTALLA FINAL
+========================== */
+
+#screenFinal{
+
+    display:none;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.80),
+        rgba(0,0,0,.90)
+    ),
+    url("final-ny.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    text-align:center;
+
+}
+
+.final-container{
+
+    width:90%;
+    max-width:900px;
+
+}
+
+.final-line{
+
+    opacity:0;
+
+    font-size:1.6rem;
+
+    margin:25px 0;
+
+    animation:
+    fadeText 2s forwards;
+
+}
+
+.delay1{
+
+    animation-delay:2s;
+
+}
+
+.delay2{
+
+    animation-delay:5s;
+
+}
+
+.delay3{
+
+    animation-delay:8s;
+
+}
+
+.final-heart{
+
+    opacity:0;
+
+    font-size:6rem;
+
+    margin-top:40px;
+
+    animation:
+    heartbeatFinal 1.2s infinite,
+    fadeText 2s forwards;
+
+    animation-delay:11s;
+
+}
+
+.delay5{
+
+    opacity:0;
+
+    animation:
+    fadeText 2s forwards;
+
+    animation-delay:13s;
+
+}
+
+.delay6{
+
+    opacity:0;
+
+    font-size:1.3rem;
+
+    color:#d1d5db;
+
+    margin-top:20px;
+
+    animation:
+    fadeText 2s forwards;
+
+    animation-delay:15s;
+
+}
+
+.final-title{
+
+    font-family:'Orbitron',sans-serif;
+
+    font-size:3rem;
+
+    margin-top:20px;
+
+    color:white;
+
+}
+
+.btn-spider{
+
+    padding:18px 55px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:
+    linear-gradient(
+        45deg,
+        #E11D48,
+        #2563EB
+    );
+
+    color:white;
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+    box-shadow:
+        0 0 20px rgba(225,29,72,.5);
+
+}
+
+.btn-spider:hover{
+
+    transform:
+        translateY(-5px)
+        scale(1.05);
+
+    box-shadow:
+        0 0 20px #E11D48,
+        0 0 40px #2563EB,
+        0 0 80px rgba(37,99,235,.5);
+
+}
+
+@keyframes fadeText{
+
+    from{
+
+        opacity:0;
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes heartbeatFinal{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.15);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+#goFinal{
+
+    margin-top:40px;
+
+    padding:18px 55px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:
+    linear-gradient(
+        45deg,
+        #E11D48,
+        #2563EB
+    );
+
+    color:white;
+
+    font-size:1rem;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:
+    0 0 20px rgba(225,29,72,.5);
+
+}
+
+#goFinal:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:
+    0 0 20px #E11D48,
+    0 0 40px #2563EB;
+
+}
+
+#typewriter{
+
+    white-space: pre-line;
+
+    line-height: 2;
+
+    font-size: 1.1rem;
+
+}
+
+.cursor{
+
+    display:inline-block;
+
+    animation:blink .8s infinite;
+
+}
+
+@keyframes blink{
+
+    50%{
+        opacity:0;
+    }
+
+}
+
+@keyframes cartaEntrada{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-50px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
